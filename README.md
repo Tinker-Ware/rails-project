@@ -1,4 +1,4 @@
-TI CONSULTING INFRASTRUCTURE
+STARTUP STUDIO INFRASTRUCTURE
 ===
 
 This repositoy contains the following tools:
