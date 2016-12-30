@@ -33,7 +33,7 @@ All the files will be placed there ready to be modified.
 
 HAPPY CODING!
 
-Current DB Config
+Current Config
 ===
 
 For development, de database is configured as it follows:
