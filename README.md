@@ -13,7 +13,7 @@ Usage
 For new repos, clone including submodules.
 
 ```
-  git clone --recursive https://github.com/Tinker-Ware/ticonsulting-infrastructure.git
+  git clone --recursive https://github.com/Tinker-Ware/startupstudio-infrastructure.git
 ```
 
 For already cloned repos, just update the submodules.
@@ -40,10 +40,10 @@ For development, de database is configured as it follows:
 
 ```
 root password: rootpass
-mysql user: "ticonsulting"
+mysql user: "charlie"
 mysql host: "localhost" #Inside the Vagrant. or 192.168.33.10 from the outside.
 mysql password: "password"
-mysql database name: "ti_database"
+mysql database name: "ss_database"
 ```
 
 For Database configurations and yii framework cookie validation key,
