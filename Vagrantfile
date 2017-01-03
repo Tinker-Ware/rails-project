@@ -32,7 +32,7 @@ def standard_machine(config, hostname, ip)
     config.vm.network :private_network, ip: ip
     config.vm.hostname = hostname
     config.ssh.insert_key = false
-    config.vm.synced_folder "tinker", "/opt/tinker/shared_files", mount_options: ["uid=1010,gid=1010"], create: true
+    config.vm.synced_folder "tinker_shared_files", "/opt/tinker/shared_files", mount_options: ["uid=1010,gid=1010,dmode=755,fmode=644"], create: true, owner: 1010, group: 1010
     config.vm.provision "shell", inline: "sudo groupadd -g 1010 #{group} || true && sudo useradd -u 1010 #{user} -g #{group} -m -d /home/#{user}/ ||  true"
 
     ### Provider configurations
