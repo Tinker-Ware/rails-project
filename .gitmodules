@@ -6,7 +6,7 @@
 	url = https://github.com/Oefenweb/ansible-nodejs.git
 [submodule "provisioning/roles/rails"]
 	path = provisioning/roles/rails
-	url = git@github.com:Tinker-Ware/ansible-rails-role.git
+	url = https://github.com/Tinker-Ware/ansible-rails-role.git
 [submodule "provisioning/roles/mysql"]
 	path = provisioning/roles/mysql
 	url = https://github.com/geerlingguy/ansible-role-mysql.git
