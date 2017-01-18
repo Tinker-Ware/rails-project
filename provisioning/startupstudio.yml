@@ -2,8 +2,6 @@
 - hosts: startupstudio.web
   roles:
     - { role: rails, tags: rails }
-#    - { role: web, tags: landing }
     - { role: nginx, sudo: yes, tags: [nginx, landing] }
-#    - { role: web, server_name: mydevopdemo.tinkerware.io, github_repo: "https://github.com/Tinker-Ware/website_old", tags: demo }
 #    - { role: text_editor, editor: emacs24-nox }
 #    - { role: mysql, sudo: yes }
