@@ -12,7 +12,8 @@ def standard_machine(config, hostname, ip)
     opts = GetoptLong.new(
       [ '--tags', GetoptLong::OPTIONAL_ARGUMENT ],
       [ '-f', GetoptLong::OPTIONAL_ARGUMENT ],
-      [ '-h', GetoptLong::OPTIONAL_ARGUMENT ]
+      [ '-h', GetoptLong::OPTIONAL_ARGUMENT ],
+      [ '-c', GetoptLong::OPTIONAL_ARGUMENT ]
     )
     tags = ''
     opts.each do |opt, arg|
