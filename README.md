@@ -9,33 +9,41 @@ This repositoy contains the following tools:
 
 It will take up to **10 minutes to finish the first config**
 
-Usage
-===
+When the process is done, you can view your project in your browser in: `192.168.33.10:3000`.
 
-For new repos, clone including submodules.
-
-```
-  git clone --recursive https://github.com/Tinker-Ware/startupstudio-infrastructure.git
-```
-
-For already cloned repos, just update the submodules.
-```
-  git submodule update --init --recursive
-```
-
-Start working with the created Vagrant machine:
-```
-  vagrant up
-```
-When the process is done, you can view your project in your browser in: `192.168.33.10` in ports
-3000 and 4000 by default or depending on your defined variables.
-
-This will create a synced folder with your host machine `./tinker_share_files`.
+This will create a synced folder with your host machine `./tinker_share_files/`.
 All the files will be placed there ready to be modified.
 
 HAPPY CODING!
 
-# USE YOUR REPOSITORIES
+
+Usage
+===
+
+## With [tinker-cli](https://github.com/thetonymaster/tinker-cli/releases/download/v0.1/tinker-cli)
+[Download it!](https://github.com/thetonymaster/tinker-cli/releases/download/v0.1/tinker-cli)
+
+Fetch project: 
+```
+  tinker create startupstudio-infrastructure
+```
+
+Initialize a new dev env.
+```
+  tinker run
+```
+
+Apply new configurations: 
+```
+  tinker update
+```
+
+CLI HELP project: 
+```
+  tinker help
+```
+
+# USE YOUR OWN REPOSITORIES
 
 Modify your github credentials updating `provisioning/host_vars/startupstudio.web`
 and define your repos there.
@@ -89,23 +97,29 @@ mysql password: "password"
 mysql database name: "ss_database"
 ```
 
-For Database configurations and yii framework cookie validation key,
-go to `provisioning/host_vars/startupstudio.web` if needed.
+## USING GIT AND VAGRANT
 
-There you can define your rails repos as well like:
+For new repos, clone including submodules.
+
 ```
-rails_repos:
-  app1:
-    name: https://github.com/RailsApps/rails-signup-download.git
-    port: 3000
-    branch: master
-  app2:
-    name: https://github.com/RailsApps/learn-rails.git
-    port: 4000
-    branch: master
+  git clone --recursive https://github.com/Tinker-Ware/startupstudio-infrastructure.git
 ```
 
-If any change is made, contact Tinkerware support. :)
+For already cloned repos, just update the submodules.
+```
+  git submodule update --init --recursive
+```
+
+Start working with the created Vagrant machine:
+```
+  vagrant up
+```
+
+Apply new configurations
+```
+  vagrant provision
+```
+
 
 Support
 ===
