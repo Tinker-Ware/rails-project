@@ -1,0 +1,7 @@
+---
+- hosts: rails.web
+  roles:
+    - { role: rails, tags: rails }
+    - { role: nginx, sudo: yes, tags: [nginx, landing] }
+    - { role: text_editor, editor: vim }
+    - { role: mysql, sudo: yes }

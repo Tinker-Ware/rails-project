@@ -18,7 +18,7 @@ rails_git_key_path: "{{ lookup('env','HOME') }}/.ssh/ansible_id_rsa"
 
 nginx_remove_default_vhost: true
 nginx_vhosts:
-  - server_name: "app1.startupstudio.io"
+  - server_name: "app1.domain.io"
     listen: "80"
     extra_parameters: |
       location / {
@@ -26,7 +26,7 @@ nginx_vhosts:
         proxy_set_header    X-Real-IP $remote_addr;
         proxy_pass          http://127.0.0.1:3000;
       }
-  - server_name: "app2.startupstudio.io"
+  - server_name: "app2.domain.io"
     listen: "80"
     extra_parameters: |
       location / {

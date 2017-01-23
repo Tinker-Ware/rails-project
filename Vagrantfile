@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  standard_machine config, 'startupstudio.web', '192.168.33.10'
+  standard_machine config, 'rails.web', '192.168.33.10'
 end
 
 def standard_machine(config, hostname, ip)

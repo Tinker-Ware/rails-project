@@ -1,1 +1,1 @@
-startupstudio.web ansible_connection=local
+rails.web ansible_connection=local

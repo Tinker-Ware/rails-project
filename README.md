@@ -25,7 +25,7 @@ Usage
 
 Fetch project: 
 ```
-  tinker create startupstudio-infrastructure
+  tinker create rails-project
 ```
 
 Initialize a new dev env.
@@ -45,7 +45,7 @@ CLI HELP project:
 
 # USE YOUR OWN REPOSITORIES
 
-Modify your github credentials updating `provisioning/host_vars/startupstudio.web`
+Modify your github credentials updating `provisioning/host_vars/rails.web`
 and define your repos there.
 
 ```
@@ -60,7 +60,7 @@ rails_repos:
 
 Make sure to configure everything properly.
 
-Modify your github credentials updating `provisioning/host_vars/startupstudio.web`
+Modify your github credentials updating `provisioning/host_vars/rails.web`
 
 ```
 private_key: yes    # MAKE SURE THIS LINE IS SET TO YES
@@ -76,7 +76,7 @@ gitconfig:
 ```
 
 Include your private key in:
-`provisioning/host_files/startupstudio.web/keys/private` in a file as follows:
+`provisioning/host_files/rails.web/keys/private` in a file as follows:
 
 ```
 priv_k: |
@@ -102,7 +102,7 @@ mysql database name: "ss_database"
 For new repos, clone including submodules.
 
 ```
-  git clone --recursive https://github.com/Tinker-Ware/startupstudio-infrastructure.git
+  git clone --recursive https://github.com/Tinker-Ware/rails-project.git
 ```
 
 For already cloned repos, just update the submodules.
