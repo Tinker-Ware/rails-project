@@ -1,4 +1,4 @@
-STARTUP STUDIO INFRASTRUCTURE
+TinkerWare Rails Project
 ===
 
 This repositoy contains the following tools: 
