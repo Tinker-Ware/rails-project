@@ -52,7 +52,7 @@ def standard_machine(config, hostname, ip)
       ansible.playbook = "provisioning/site.yml"
       ansible.provisioning_path = "/vagrant"
       ansible.inventory_path = "provisioning/vagrant_hosts"
-      ansible.verbose = true
+      ansible.verbose = false
       if tags != ''
         ansible.tags = "#{tags}"
       end
