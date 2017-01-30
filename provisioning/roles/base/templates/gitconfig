@@ -1,3 +1,0 @@
-[user]
-    email = "{{ gitconfig.option.user_email }}"
-    name = "{{ gitconfig.option.user_name }}"

@@ -11,3 +11,6 @@
 	path = provisioning/roles/mysql
 	url = https://github.com/geerlingguy/ansible-role-mysql.git
                 
+[submodule "provisioning/roles/base"]
+	path = provisioning/roles/base
+	url = https://github.com/Tinker-Ware/ansible-base-role.git
